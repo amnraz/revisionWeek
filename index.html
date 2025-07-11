@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Dashboard</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <h1> Search Dashboard</h1>
+  <input type="text" id="searchBox" placeholder="Search names..." />
+
+  <div class="stats">
+    Keystrokes: <span id="keystrokes">0</span> |
+    Searches (Debounced): <span id="searchCount">0</span>
+  </div>
+
+  <div class="loader" id="loader" style="display: none;">Searching...</div>
+  <div class="no-results" id="noResults" style="display: none;">No results found</div>
+  <div class="results" id="results"></div>
+
+  <button id="backToTop">⬆ Back to Top</button>
+
+  <script src="index.js"></script>
+</body>
+</html>

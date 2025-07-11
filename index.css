@@ -49,6 +49,6 @@ input {
 }
 
 .no-results {
-  color: red;
+  color: rgb(255, 2, 255);
   margin-top: 10px;
 }

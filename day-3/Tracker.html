@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>📘 My Books</h2>
+  <button onclick="logout()">Logout</button>
+
+  <form id="bookForm">
+    <input type="text" id="title" placeholder="Book Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <div>
+    <label><input type="radio" name="filter" value="all" checked> All</label>
+    <label><input type="radio" name="filter" value="read"> Read</label>
+    <label><input type="radio" name="filter" value="unread"> Unread</label>
+  </div>
+
+  <div id="bookList">Loading books...</div>
+  <script src="tracker.js"></script>
+</body>
+</html>

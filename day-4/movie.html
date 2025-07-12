@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎬 Movie Browser</title>
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎥 Movie Browser</h1>
+
+    <div class="controls">
+      <select id="sort">
+        <option value="">Sort By</option>
+        <option value="rating">Rating: High to Low</option>
+        <option value="title">Title: A-Z</option>
+      </select>
+
+      <select id="genre">
+        <option value="">Filter by Genre</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Action">Action</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Science-Fiction">Science-Fiction</option>
+      </select>
+    </div>
+
+    <div id="movieList" class="grid"></div>
+
+    <div class="pagination">
+      <button id="prevBtn">Previous</button>
+      <span id="pageNum">Page 1</span>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <script src="movie.js"></script>
+</body>
+</html>
